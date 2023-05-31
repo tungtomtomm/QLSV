@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31A6A680-CC00-4036-A66A-D9D49FE9A48D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quanlysinhvien</RootNamespace>
+    <AssemblyName>Quanlysinhvien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.XtraBars.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\Diem_BUS.cs" />
+    <Compile Include="BUS\GiangVien_BUS.cs" />
+    <Compile Include="BUS\Khoa_BUS.cs" />
+    <Compile Include="BUS\LopHocPhan_BUS.cs" />
+    <Compile Include="BUS\LopHoc_BUS.cs" />
+    <Compile Include="BUS\MatKhau_BUS.cs" />
+    <Compile Include="BUS\MonHoc_BUS.cs" />
+    <Compile Include="BUS\Nganh_BUS.cs" />
+    <Compile Include="BUS\NguoiDung_BUS.cs" />
+    <Compile Include="BUS\SinhVien_BUS.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\Diem_DAO.cs" />
+    <Compile Include="DAO\GiangVien_DAO.cs" />
+    <Compile Include="DAO\Khoa_DAO.cs" />
+    <Compile Include="DAO\LopHocPhan_DAO.cs" />
+    <Compile Include="DAO\LopHoc_DAO.cs" />
+    <Compile Include="DAO\MatKhau_DAO.cs" />
+    <Compile Include="DAO\MonHoc_DAO.cs" />
+    <Compile Include="DAO\Nganh_DAO.cs" />
+    <Compile Include="DAO\NguoiDung_DAO.cs" />
+    <Compile Include="DAO\SinhVien_DAO.cs" />
+    <Compile Include="DTO\Diem.cs" />
+    <Compile Include="DTO\GiangVien.cs" />
+    <Compile Include="DTO\Khoa.cs" />
+    <Compile Include="DTO\LopHoc.cs" />
+    <Compile Include="DTO\LopHocPhan.cs" />
+    <Compile Include="DTO\MonHoc.cs" />
+    <Compile Include="DTO\Nganh.cs" />
+    <Compile Include="DTO\NguoiDung.cs" />
+    <Compile Include="DTO\SinhVien.cs" />
+    <Compile Include="GUI\fAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fAbout.Designer.cs">
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fDangKyHP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fDangKyHP.Designer.cs">
+      <DependentUpon>fDangKyHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fDiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fDiem.Designer.cs">
+      <DependentUpon>fDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fGiangVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fGiangVien.Designer.cs">
+      <DependentUpon>fGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fHoSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fHoSo.Designer.cs">
+      <DependentUpon>fHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fKhoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fKhoa.Designer.cs">
+      <DependentUpon>fKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fLopHoc.Designer.cs">
+      <DependentUpon>fLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fLopHocPhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fLopHocPhan.Designer.cs">
+      <DependentUpon>fLopHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMonHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fMonHoc.Designer.cs">
+      <DependentUpon>fMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fNganh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fNganh.Designer.cs">
+      <DependentUpon>fNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fNguoiDung.Designer.cs">
+      <DependentUpon>fNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fSinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fSinhVien.Designer.cs">
+      <DependentUpon>fSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTableManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTableManager.Designer.cs">
+      <DependentUpon>fTableManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTraCuuDiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\fTraCuuDiem.Designer.cs">
+      <DependentUpon>fTraCuuDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucFrmDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucFrmDoiMatKhau.Designer.cs">
+      <DependentUpon>ucFrmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\fAbout.resx">
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fDangKyHP.resx">
+      <DependentUpon>fDangKyHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fDiem.resx">
+      <DependentUpon>fDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fGiangVien.resx">
+      <DependentUpon>fGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fHoSo.resx">
+      <DependentUpon>fHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fKhoa.resx">
+      <DependentUpon>fKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fLopHoc.resx">
+      <DependentUpon>fLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fLopHocPhan.resx">
+      <DependentUpon>fLopHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMonHoc.resx">
+      <DependentUpon>fMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNganh.resx">
+      <DependentUpon>fNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNguoiDung.resx">
+      <DependentUpon>fNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fSinhVien.resx">
+      <DependentUpon>fSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTableManager.resx">
+      <DependentUpon>fTableManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTraCuuDiem.resx">
+      <DependentUpon>fTraCuuDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucFrmDoiMatKhau.resx">
+      <DependentUpon>ucFrmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-management-user-5ae155f36cf686.7736884715247170434463.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPUlogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91570085_1603045273195668_4145283223263379456_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blogger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favourite-subject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
