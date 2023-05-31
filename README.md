@@ -1,4 +1,4 @@
-## Quản trị dự án CNTT: Quản lý sinh viên lớp D13QTANM
+## Quản trị dự án CNTT: Quản lý sinh viên lớp D15QTANM
 ---
 
 ### Thành viên
